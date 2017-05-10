@@ -1,0 +1,33 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "./node_modules/typescript/bin/tsc",
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repo %>"
+  },
+  "author": "<%= author %>",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "mocha-clean": "^1.0.0",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.3.2"
+  },
+  "license": "UNLICENSED",
+  "files": [
+    "README.md",
+    "yarn.lock",
+    "lib/**/*.js",
+    "lib/**/*.d.ts"
+  ]
+}
